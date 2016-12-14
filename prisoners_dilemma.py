@@ -381,3 +381,4 @@ if __name__ == '__main__':
     scores, moves, reports = main_play(modules[0:4])   
     section0, section1, section2, section3 = reports
     # New comment from yours truly
+    teamname = 'team'
