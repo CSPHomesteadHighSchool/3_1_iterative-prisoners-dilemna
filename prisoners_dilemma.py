@@ -18,6 +18,8 @@ team_name = 'Team 1'
 # The results of all previous rounds within a 100-200 round stretch are known
 # to both players. 
 #
+# My Nama jeff
+#
 # play_tournament([team0, team1, team2]) executes a tournament and writes to tournament.txt
 #
 # Each team's strategy should be coded in their assigned Python file, called a module.
