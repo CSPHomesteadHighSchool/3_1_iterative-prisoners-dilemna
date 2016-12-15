@@ -70,7 +70,7 @@ def main_play(modules):
     post_to_file(section0+section1+section2 + code + ''.join(section3))
     return scores, moves, [section0, section1, section2, section3]
         
-def play_tournament(modules):
+def play_tournament(modules): # This is Zach Leslie's line 
     '''Each argument is a module name
     Each module must contain 
         team_name: a string
