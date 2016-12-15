@@ -47,7 +47,7 @@ team11, team12, team13, team14]
 for module in modules:
     reload(module)
     print ('reloaded',module)
-    for required_variable in ['team_name', 'strategy_name', 'strategy_description']:
+    for required_variable in ['Funky Shrimp', 'strategy_name', 'strategy_description']:
         if not hasattr(module, required_variable):
             setattr(module, required_variable, 'missing assignment')
 
