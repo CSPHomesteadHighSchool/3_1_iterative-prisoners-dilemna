@@ -1,7 +1,12 @@
 from __future__ import print_function
+#<<<<<<< Brandon_8
 
 #####
 ###Github pls work 
+=======
+#team_name = 'Team 1'
+##### 
+#>>>>>>> master
 # Computer Science and Software Engineering
 # PLTW AP CS Principles
 # (c)2014 Project Lead The Way, Inc.
@@ -42,14 +47,14 @@ import team10, team11, team12, team13, team14
 #Brandon Farish Changed This, ...
 betray = example1
 collude = example0
-
+team_name = 'Sneaky Sausagesss'
 modules = [example0, example1, example2, example3, example4, example5, example6, example7,
 team0, team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, 
 team11, team12, team13, team14]
 for module in modules:
     reload(module)
     print ('reloaded',module)
-    for required_variable in ['team_name', 'strategy_name', 'strategy_description']:
+    for required_variable in ['Funky Shrimp', 'strategy_name', 'strategy_description']:
         if not hasattr(module, required_variable):
             setattr(module, required_variable, 'missing assignment')
 
@@ -72,7 +77,7 @@ def main_play(modules):
     post_to_file(section0+section1+section2 + code + ''.join(section3))
     return scores, moves, [section0, section1, section2, section3]
         
-def play_tournament(modules):
+def play_tournament(modules): # This is Zach Leslie's line 
     '''Each argument is a module name
     Each module must contain 
         team_name: a string
@@ -359,7 +364,8 @@ def copy_template():
         filename = os.path.join(directory, target)
         with open(filename, 'w') as target_file:
             target_file.write(''.join(source))                                   
-                     
+      
+# Ben Miller 8 .              
 def post_to_api():
     pass
 
@@ -382,3 +388,4 @@ def post_to_file(string, filename='tournament.txt', directory=''):
 if __name__ == '__main__':
     scores, moves, reports = main_play(modules[0:4])   
     section0, section1, section2, section3 = reports
+    # New comment from yours truly
