@@ -1,5 +1,5 @@
 from __future__ import print_function
-team_name = 'The Winning Team'
+team_name = 'Team 1'
 ##### 
 # Computer Science and Software Engineering
 # PLTW AP CS Principles
