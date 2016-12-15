@@ -1,6 +1,12 @@
 from __future__ import print_function
-team_name = 'Team 1'
+#<<<<<<< Brandon_8
+
+#####
+###Github pls work 
+=======
+#team_name = 'Team 1'
 ##### 
+#>>>>>>> master
 # Computer Science and Software Engineering
 # PLTW AP CS Principles
 # (c)2014 Project Lead The Way, Inc.
@@ -38,6 +44,7 @@ import example4, example5, example6, example7
 import team0, team1, team2, team3, team4
 import team5, team6, team7, team8, team9
 import team10, team11, team12, team13, team14
+#Brandon Farish Changed This, ...
 betray = example1
 collude = example0
 team_name = 'Sneaky Sausagesss'
