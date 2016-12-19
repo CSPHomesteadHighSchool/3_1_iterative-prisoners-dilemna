@@ -294,7 +294,7 @@ def make_section3(modules, moves, scores, index):
     -133 pt/round: Colloid (P6) "Collude every 3rd round"
     -233 pt/round: 2PwnU (P8) "Betray, then alternate"
     bBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcB
-    bcBcbCbcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbc
+    bcBcbCbcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbc I BELIVE I CAN FLY!!!!!
     '''
     section3 = '-'*80+'\nSection 3 - Game Data for Team '
     section3 += modules[index].team_name + '\n'
