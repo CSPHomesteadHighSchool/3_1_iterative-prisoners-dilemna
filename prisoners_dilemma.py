@@ -41,7 +41,7 @@ import team10, team11, team12, team13, team14
 betray = example1
 collude = example0
 
-team_name = 'Team 1 (Chase Page)' # Only 10 chars displayed.
+team_name = 'Team 1 (Chase Page)' 
 strategy_name = 'The name the team gives to this strategy'
 strategy_description = 'How does this strategy decide?'
     
@@ -88,8 +88,7 @@ if __name__ == '__main__':
               my_score=0,
               their_score=0,
               result='b'):
-        print ('Test passed')
-         
+         print 'Test passed'
      # Test 2: Continue betraying if they collude despite being betrayed.
     test_move(my_history='bbb',
               their_history='ccc', 
@@ -101,7 +100,8 @@ if __name__ == '__main__':
               # move('bbb', 'ccc', 0, 0) returns 'b'.
               my_score=0, 
               their_score=0,
-              result='b') 
+              result='b')  
+              
 modules = [example0, example1, example2, example3, example4, example5, example6, example7,
 team0, team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, 
 team11, team12, team13, team14]
