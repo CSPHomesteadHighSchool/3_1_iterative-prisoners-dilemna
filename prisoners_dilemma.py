@@ -1,7 +1,7 @@
 from __future__ import print_function
 #<<<<<<< Brandon_8
 # ZKistler test
-#####
+########
 ###Github pls work 
 #team_name = 'Team 1'
 #####meme 
@@ -17,13 +17,13 @@ from __future__ import print_function
 # To run a tournament, execute this file. 
 # Place each team's strategy in a file in the same directory as this file.
 # Tournament results saved to tournament.txt in this directory.
-#
+#####dont.drop.the.soap#####
 # prisoners_dilemma.py automates competition among different strategies
 # for the Iterative Prisoners Dilemma, the canonical game of game-theory.
 # Each strategy is pitted against each other strategy for 100 to 200 rounds.
 # The results of all previous rounds within a 100-200 round stretch are known
 # to both players. 
-#
+######### damn daniel
 # My Nama jeff
 #sunday is the first day of the week
 # play_tournament([team0, team1, team2]) executes a tournament and writes to tournament.txt
@@ -40,7 +40,7 @@ from __future__ import print_function
 #######
 import random
 import os.path              
-    
+###
 import example0, example1, example2, example3
 import example4, example5, example6, example7
 import team0, team1, team2, team3, team4
@@ -59,7 +59,7 @@ for module in modules:
     for required_variable in ['Funky Shrimp', 'strategy_name', 'strategy_description']:
         if not hasattr(module, required_variable):
             setattr(module, required_variable, 'missing assignment')
-
+###
 def main_play(modules):
     '''main_play plays a tournament and outputs results to screen and file.
     This function is called once when this file is executed.
@@ -68,8 +68,8 @@ def main_play(modules):
     Returns:
         scores:
         moves:
-        sections: a list of [str, str, str, list of str]    
-            '''
+        sections: a list of [str, str, str, list of str]   
+        '''
     scores, moves = play_tournament(modules)
     section0, section1, section2, section3 = make_reports(modules, scores, moves)
     code = make_code_string(modules)
@@ -105,8 +105,8 @@ def play_tournament(modules): # This is Zach Leslie's line
         scores[first_team_index][first_team_index] = 0
         moves[first_team_index][first_team_index] = ''
     return scores, moves
-
-
+###
+###
 def play_iterative_rounds(player1, player2):
     '''
     Plays a random number of rounds (between 100 and 200 rounds) 
@@ -115,7 +115,7 @@ def play_iterative_rounds(player1, player2):
     Returns 4-tuple, for example ('cc', 'bb', -200, 600) 
     but with much longer strings 
     '''
-    number_of_rounds = random.randint(100, 200)
+    number_of_rounds = random.randint(100, 200) # This specifies the number of rounds, which is a random integer between 100 and 200
     moves1 = ''
     moves2 = ''
     score1 = 0
@@ -179,7 +179,7 @@ def play_round(player1, player2, score1, score2, moves1, moves2):
         moves1 += action1
     else:
         moves1 += ' '
-    if action2 in 'bc':
+    if action2 in 'bc': 
         moves2 += action2
     else:
         moves2 += ' '
@@ -322,7 +322,7 @@ def make_section3(modules, moves, scores, index):
             section3 += '-'*80 + '\n'
     return section3
                                                     
-def capitalize(history1, history2):
+def capitalize(history1, history2): #hey
     '''Accept two strings of equal length.
     Return the same two strings but capitalizing the opponent of 'c' each round.
     '''
@@ -354,7 +354,7 @@ def make_code_string(modules):
         code +='-'*80 + '\n'
         code += ''.join(players_code_file.readlines())
     return code
-
+#
 def copy_template():
     '''Transfer code in team0.py to team1.py though team14.py
     '''
@@ -392,3 +392,4 @@ if __name__ == '__main__':
     section0, section1, section2, section3 = reports
     # New comment from yours truly
     teamname = 'team'
+    #This function calls the game 
