@@ -207,6 +207,14 @@ def make_section0(modules, scores):
     Player 1 (P1): Team name 1, Strategy name 1, 
          Strategy 1 description
     ''' 
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+    return 'c'
     section0 = '-'*80+'\n'
     section0 += 'Section 0 - Line up\n'
     section0 += '-'*80+'\n'
