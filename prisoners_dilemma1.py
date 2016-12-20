@@ -131,10 +131,10 @@ def play_round(player1, player2, score1, score2, moves1, moves2):
     Returns a 2-tuple with score1 and score2 incremented by this round
     '''
     
-    RELEASE = 0 # (R, "reward" in literature) when both players collude
-    TREAT = 100 # (T, "temptation" in literature) when you betray your partner
-    SEVERE_PUNISHMENT = -500 # (S, "sucker" in literature) when your partner betrays you
-    PUNISHMENT = -250 # (P) when both players betray each other
+    freindship = 0 # (R, "reward" in literature) when both players collude
+    victory = 100 # (T, "temptation" in literature) when you betray your partner
+    freindship = -500 # (S, "sucker" in literature) when your partner betrays you
+    double_double_cross = -250 # (P) when both players betray each other
     
     # Keep T > R > P > S to be a Prisoner's Dilemma
     # Keep 2R > T + S to be an Iterative Prisoner's Dilemma
@@ -153,20 +153,20 @@ def play_round(player1, player2, score1, score2, moves1, moves2):
     actions = action1 + action2
     if actions == 'cc':
         # Both players collude; get reward.
-        score1 += RELEASE
-        score2 += RELEASE
+        score1 += freindship
+        score2 += freindship
     elif actions == 'cb':
         # Player 1 colludes, player 2 betrays; get severe, treat.
-        score1 += SEVERE_PUNISHMENT
-        score2 += TREAT
+        score1 += freindship
+        score2 += freindship
     elif actions == 'bc':
         # Player 1 betrays, player 2 colludes; get treat, severe.
-        score1 += TREAT
-        score2 += SEVERE_PUNISHMENT 
+        score1 += freindship
+        score2 += freindship 
     elif actions == 'bb':
         # Both players betray; get punishment.   
-        score1 += PUNISHMENT
-        score2 += PUNISHMENT     
+        score1 += double_double_cross
+        score2 += double_double_cross     
     else:
         # Both players get the "error score" if someone's code returns an improper action.
         score1 += ERROR
