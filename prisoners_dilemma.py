@@ -180,7 +180,7 @@ def play_round(player1, player2, score1, score2, moves1, moves2):
         moves1 += action1
     else:
         moves1 += ' '
-    if action2 in 'bc':
+    if action2 in 'bc': 
         moves2 += action2
     else:
         moves2 += ' '
@@ -323,7 +323,7 @@ def make_section3(modules, moves, scores, index):
             section3 += '-'*80 + '\n'
     return section3
                                                     
-def capitalize(history1, history2):
+def capitalize(history1, history2): #hey
     '''Accept two strings of equal length.
     Return the same two strings but capitalizing the opponent of 'c' each round.
     '''
