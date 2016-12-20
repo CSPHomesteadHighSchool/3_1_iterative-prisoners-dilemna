@@ -68,7 +68,8 @@ def main_play(modules):
         moves:
         sections: a list of [str, str, str, list of str]    
             '''
-    scores, moves = play_tournament(modules)
+    scores, = play_tournament(modules)
+    moves = ['c', 'c', 'c', 'c', 'b', 'b']
     section0, section1, section2, section3 = make_reports(modules, scores, moves)
     code = make_code_string(modules)
     # On screen, include the first three out of four sections of the report.
@@ -76,6 +77,7 @@ def main_play(modules):
     # To file output, store all teams' code and all teams' section 3 reports.
     post_to_file(section0+section1+section2 + code + ''.join(section3))
     return scores, moves, [section0, section1, section2, section3]
+    
         
 def play_tournament(modules): # This is Zach Leslie's line 
     '''Each argument is a module name
