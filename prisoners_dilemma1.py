@@ -10,7 +10,7 @@ from __future__ import print_function
 # PLTW AP CS Principles
 # (c)2014 Project Lead The Way, Inc.
 #
-# comment
+# comment_reeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 # Activity 1.3.9 Tools for Collaboration
 # Project 1.3.10 Collaborating on a Project
 # 
@@ -68,7 +68,8 @@ def main_play(modules):
         moves:
         sections: a list of [str, str, str, list of str]    
             '''
-    scores, moves = play_tournament(modules)
+    scores, = play_tournament(modules)
+    moves = ['c', 'c', 'c', 'c', 'b', 'b']
     section0, section1, section2, section3 = make_reports(modules, scores, moves)
     code = make_code_string(modules)
     # On screen, include the first three out of four sections of the report.
@@ -76,6 +77,7 @@ def main_play(modules):
     # To file output, store all teams' code and all teams' section 3 reports.
     post_to_file(section0+section1+section2 + code + ''.join(section3))
     return scores, moves, [section0, section1, section2, section3]
+    
         
 def play_tournament(modules): # This is Zach Leslie's line 
     '''Each argument is a module name
@@ -131,10 +133,10 @@ def play_round(player1, player2, score1, score2, moves1, moves2):
     Returns a 2-tuple with score1 and score2 incremented by this round
     '''
     
-    freindship = 0 # (R, "reward" in literature) when both players collude
-    victory = 100 # (T, "temptation" in literature) when you betray your partner
-    freindship = -500 # (S, "sucker" in literature) when your partner betrays you
-    double_double_cross = -250 # (P) when both players betray each other
+    freindship = 50 # (R, "reward" in literature) when both players collude
+    victory = 300 # (T, "temptation" in literature) when you betray your partner
+    pain = -500 # (S, "sucker" in literature) when your partner betrays you
+    double_double_cross = -1000 # (P) when both players betray each other
     
     # Keep T > R > P > S to be a Prisoner's Dilemma
     # Keep 2R > T + S to be an Iterative Prisoner's Dilemma
@@ -157,12 +159,12 @@ def play_round(player1, player2, score1, score2, moves1, moves2):
         score2 += freindship
     elif actions == 'cb':
         # Player 1 colludes, player 2 betrays; get severe, treat.
-        score1 += freindship
-        score2 += freindship
+        score1 += pain
+        score2 += victory
     elif actions == 'bc':
         # Player 1 betrays, player 2 colludes; get treat, severe.
-        score1 += freindship
-        score2 += freindship 
+        score1 += victory
+        score2 += pain 
     elif actions == 'bb':
         # Both players betray; get punishment.   
         score1 += double_double_cross
@@ -201,7 +203,8 @@ def make_section0(modules, scores):
     ----------------------------------------------------------------------------
     Section 0 - Line up
     ----------------------------------------------------------------------------
-    Player 0 (P0): Team name 0, Strategy name 0,
+    Player 0 (P0): Team name 0, Strategy name 0,    
+##CHASEANDREWPAGE#####
          Strategy 0 description
     Player 1 (P1): Team name 1, Strategy name 1, 
          Strategy 1 description

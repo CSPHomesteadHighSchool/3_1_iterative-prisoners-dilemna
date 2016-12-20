@@ -86,7 +86,7 @@ def play_tournament(modules): # This is Zach Leslie's line
         strategy_name: a string
         strategy_description: a string
         move: A function that returns 'c' or 'b'
-    '''
+    ''' #SAUSAGE
     zeros_list = [0]*len(modules) # to initialize each player's head-to-head scores
     scores = [zeros_list[:] for module in modules] # Copy it or it's only 1 list
     moves = [zeros_list[:] for module in modules] # Copy it or it's only 1 list
