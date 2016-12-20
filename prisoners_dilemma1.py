@@ -364,7 +364,7 @@ def copy_template():
         filename = os.path.join(directory, target)
         with open(filename, 'w') as target_file:
             target_file.write(''.join(source))                                   
-      
+# is this what we need to do?      
 # Ben Miller 8 .              
 def post_to_api():
     pass
