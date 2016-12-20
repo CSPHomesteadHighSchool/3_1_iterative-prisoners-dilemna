@@ -3,7 +3,6 @@ from __future__ import print_function
 # ZKistler test
 #####
 ###Github pls work 
-=======
 #team_name = 'Team 1'
 #####meme 
 #>>>>>>> master
