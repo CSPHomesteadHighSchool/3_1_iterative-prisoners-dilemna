@@ -1,19 +1,13 @@
 from __future__ import print_function
-#<<<<<<< Brandon_8
-# ZKistler test
-#####
-###Github pls work 
-#team_name = 'Team 1'
-#####meme 
-#>>>>>>> master
+team_name = 'Team 1'
+##### 
 # Computer Science and Software Engineering
 # PLTW AP CS Principles
 # (c)2014 Project Lead The Way, Inc.
-# This is a comment, please work github
+#
 # Activity 1.3.9 Tools for Collaboration
 # Project 1.3.10 Collaborating on a Project
-#hiloli clinton
-# comment
+# 
 # To run a tournament, execute this file. 
 # Place each team's strategy in a file in the same directory as this file.
 # Tournament results saved to tournament.txt in this directory.
@@ -24,8 +18,6 @@ from __future__ import print_function
 # The results of all previous rounds within a 100-200 round stretch are known
 # to both players. 
 #
-# My Nama jeff
-#sunday is the first day of the week
 # play_tournament([team0, team1, team2]) executes a tournament and writes to tournament.txt
 #
 # Each team's strategy should be coded in their assigned Python file, called a module.
@@ -41,22 +33,21 @@ from __future__ import print_function
 import random
 import os.path              
     
-import example0, example1, example2, example3
+import example0, example1, example2, example3 #Why doesnt example 0 work##
 import example4, example5, example6, example7
 import team0, team1, team2, team3, team4
 import team5, team6, team7, team8, team9
 import team10, team11, team12, team13, team14
-#Brandon Farish Changed This, ...
 betray = example1
 collude = example0
-team_name = 'Sneaky Sausagesss'
+
 modules = [example0, example1, example2, example3, example4, example5, example6, example7,
 team0, team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, 
 team11, team12, team13, team14]
 for module in modules:
     reload(module)
     print ('reloaded',module)
-    for required_variable in ['Funky Shrimp', 'strategy_name', 'strategy_description']:
+    for required_variable in ['team_name', 'strategy_name', 'strategy_description']:
         if not hasattr(module, required_variable):
             setattr(module, required_variable, 'missing assignment')
 
@@ -79,7 +70,7 @@ def main_play(modules):
     post_to_file(section0+section1+section2 + code + ''.join(section3))
     return scores, moves, [section0, section1, section2, section3]
         
-def play_tournament(modules): # This is Zach Leslie's line 
+def play_tournament(modules):
     '''Each argument is a module name
     Each module must contain 
         team_name: a string
@@ -115,7 +106,7 @@ def play_iterative_rounds(player1, player2):
     Returns 4-tuple, for example ('cc', 'bb', -200, 600) 
     but with much longer strings 
     '''
-    number_of_rounds = random.randint(100, 200) # This specifies the number of rounds, which is a random integer between 100 and 200
+    number_of_rounds = random.randint(100, 200)
     moves1 = ''
     moves2 = ''
     score1 = 0
@@ -296,7 +287,7 @@ def make_section3(modules, moves, scores, index):
     -133 pt/round: Colloid (P6) "Collude every 3rd round"
     -233 pt/round: 2PwnU (P8) "Betray, then alternate"
     bBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcBbCbBcB
-    bcBcbCbcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbc I BELIVE I CAN FLY!!!!!
+    bcBcbCbcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbcbCBcbc
     '''
     section3 = '-'*80+'\nSection 3 - Game Data for Team '
     section3 += modules[index].team_name + '\n'
@@ -366,8 +357,7 @@ def copy_template():
         filename = os.path.join(directory, target)
         with open(filename, 'w') as target_file:
             target_file.write(''.join(source))                                   
-      
-# Ben Miller 8 .              
+                     
 def post_to_api():
     pass
 
@@ -390,5 +380,3 @@ def post_to_file(string, filename='tournament.txt', directory=''):
 if __name__ == '__main__':
     scores, moves, reports = main_play(modules[0:4])   
     section0, section1, section2, section3 = reports
-    # New comment from yours truly
-    teamname = 'team'

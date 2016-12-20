@@ -97,7 +97,7 @@ def play_tournament(modules): # This is Zach Leslie's line
             scores[first_team_index][second_team_index] = score1/len(moves1) # int division not an issue
             moves[first_team_index][second_team_index] = moves1
             # Redundant, but record this for the other player, from their perspective
-            scores[second_team_index][first_team_index] = score2/len(moves2) 
+            scores[second_team_index][first_team_index] = score2/len(moves2) ##I need an A please work##
             moves[second_team_index][first_team_index] = moves2
         # Playing yourself doesn't do anything
         scores[first_team_index][first_team_index] = 0
