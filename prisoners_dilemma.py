@@ -5,7 +5,7 @@ from __future__ import print_function
 ###Github pls work 
 =======
 #team_name = 'Team 1'
-##### 
+#####meme 
 #>>>>>>> master
 # Computer Science and Software Engineering
 # PLTW AP CS Principles
@@ -13,7 +13,7 @@ from __future__ import print_function
 # This is a comment, please work github
 # Activity 1.3.9 Tools for Collaboration
 # Project 1.3.10 Collaborating on a Project
-# 
+#hiloli clinton
 # comment
 # To run a tournament, execute this file. 
 # Place each team's strategy in a file in the same directory as this file.
@@ -26,7 +26,7 @@ from __future__ import print_function
 # to both players. 
 #
 # My Nama jeff
-#
+#sunday is the first day of the week
 # play_tournament([team0, team1, team2]) executes a tournament and writes to tournament.txt
 #
 # Each team's strategy should be coded in their assigned Python file, called a module.
