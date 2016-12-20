@@ -389,5 +389,3 @@ if __name__ == '__main__':
     section0, section1, section2, section3 = reports
     # New comment from yours truly
     teamname = 'team'
-def Team4(my_history, their_history, my_score, their_score):
-    return 'c'
