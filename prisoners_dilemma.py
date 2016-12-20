@@ -33,7 +33,7 @@ team_name = 'Team 1'
 import random
 import os.path              
     
-import example0, example1, example2, example3
+import example0, example1, example2, example3 #Why doesnt example 0 work##
 import example4, example5, example6, example7
 import team0, team1, team2, team3, team4
 import team5, team6, team7, team8, team9
@@ -381,39 +381,3 @@ def post_to_file(string, filename='tournament.txt', directory=''):
 if __name__ == '__main__':
     scores, moves, reports = main_play(modules[0:4])   
     section0, section1, section2, section3 = reports
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-###########I quit github##########PLEASEEEEEE WORRRRRRRRKKKKKKKK############
