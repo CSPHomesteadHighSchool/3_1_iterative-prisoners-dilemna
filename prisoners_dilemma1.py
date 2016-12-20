@@ -201,7 +201,8 @@ def make_section0(modules, scores):
     ----------------------------------------------------------------------------
     Section 0 - Line up
     ----------------------------------------------------------------------------
-    Player 0 (P0): Team name 0, Strategy name 0,
+    Player 0 (P0): Team name 0, Strategy name 0,    
+##CHASEANDREWPAGE#####
          Strategy 0 description
     Player 1 (P1): Team name 1, Strategy name 1, 
          Strategy 1 description
